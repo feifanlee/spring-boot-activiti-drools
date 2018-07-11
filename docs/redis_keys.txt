@@ -1,0 +1,3 @@
+event_field_{eventname} set bom,bomfield,input,inputfield
+event_const_{eventname} map constname->value
+event_drools_{eventname} List<DroolsMap> drools

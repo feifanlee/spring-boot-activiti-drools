@@ -1,0 +1,35 @@
+package com.xc.rules
+
+//import com.xc.bom.BomC
+//import com.xc.model.ReturnValue
+import java.util.Map
+
+//dialect  "mvel"
+global Integer const1
+global Integer const2
+
+rule "hello"
+    when
+      $map : Map(["A"] != -99)
+//        $map : Map()
+    then
+     System.out.println( "hello , A : " + $map.get("A"));
+     $map.put("result",$map.get("A") + "aaa");
+//        m.setStr( "Goodbye~" );
+//        m.setNum( 110 );
+//        //更新实体，会重新触发规则
+//        update( m );
+//        grtn.setRtnMsg("return from 233");
+end
+
+
+
+
+//rule "GoodBye"
+//    when
+//        m: Message( num == 110, printMsg : str )
+//    then
+//        m.setStr("entered rule 110");
+//        System.out.println( printMsg );
+////        grtn.setRtnMsg("return from 110");
+//end

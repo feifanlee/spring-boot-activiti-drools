@@ -1,0 +1,5 @@
+    event/input
+    http://localhost:8087/event/input?ename=event1&bom=com.xc.bom.BomC,com.xc.bom.BomC,com.xc.bom.BomC,com.xc.bom.BomC&bomField=&input=student&inputField=d,h 测试连接
+控制台打印
+    boma,a,ccca,d
+    bomb,b,cccb,h
